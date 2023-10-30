@@ -21,3 +21,15 @@ def palindrome(s):
     	print(False)
 s=input('Enter the string: ')
 palindrome(s)
+
+
+def panagram(s):
+    alphabet =('abcdefghijklmnopqrstuvwxyz')   
+    s=s.lower()
+    s=s.replace(" ","")
+    if alphabet in s:
+        print(True)
+    else:
+        print(False)
+s=input("Enter the string: ")
+panagram(s)
