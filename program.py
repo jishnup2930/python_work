@@ -9,14 +9,11 @@ def fizzbizz(n):
             print('fizz')
         else:
             print(i) 
-n=int(input("Enter the number: "))
-fizzbizz(n)
 
 
 def palindrome(s):
     return s == s[::-1]
-s=input("Enter the string: ")
-print(palindrome(s))
+
 
 
 def panagram(s):
@@ -25,6 +22,21 @@ def panagram(s):
         if i not in s:
             return False
     return True
-s=input("Enter the string: ")
-print(panagram(s))
 
+
+def freq(s):
+    frequency = {}
+    for char in s:
+        if char in frequency:
+            frequency[char] += 1
+        else:
+            frequency[char] = 1
+    return frequency
+def main():
+    print(fizzbizz(int(input("Enter the number: "))))
+    print(palindrome(input('Enter the string: ')))
+    print(panagram(input('Enter the string: ')))
+    print(freq(input('Enter the string: ')))
+
+if __name__=="__main__":
+    main()
