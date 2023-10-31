@@ -24,12 +24,12 @@ palindrome(s)
 
 
 def panagram(s):
-    alphabet =('abcdefghijklmnopqrstuvwxyz')   
-    s=s.lower()
-    s=s.replace(" ","")
-    if alphabet in s:
-        print(True)
-    else:
-        print(False)
+    alphabet =('abcdefghijklmnopqrstuvwxyz')
+    for i in alphabet:   
+        s=s.lower()
+        if i in s:
+            print(True)
+        else:
+            print(False)
 s=input("Enter the string: ")
 panagram(s)
