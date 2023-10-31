@@ -26,10 +26,9 @@ palindrome(s)
 def panagram(s):
     alphabet =('abcdefghijklmnopqrstuvwxyz')
     for i in alphabet:   
-        s=s.lower()
-        if i in s:
-            print(True)
-        else:
-            print(False)
+        if i not in s:
+            return False
+    return True
 s=input("Enter the string: ")
-panagram(s)
+print(panagram(s))
+
