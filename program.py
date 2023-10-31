@@ -14,13 +14,9 @@ fizzbizz(n)
 
 
 def palindrome(s):
-    s=s.lower()
-    if s==s[::-1]:
-    	print(True)
-    else:
-    	print(False)
-s=input('Enter the string: ')
-palindrome(s)
+    return s == s[::-1]
+s=input("Enter the string: ")
+print(palindrome(s))
 
 
 def panagram(s):
