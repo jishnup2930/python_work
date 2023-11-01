@@ -11,3 +11,6 @@ def test_substraction():
 
 def test_substraction2():
     assert evaluate("25-")== -3
+
+def test_multiplication():
+    assert evaluate("22*")== 4
