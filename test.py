@@ -5,3 +5,6 @@ def test_single_operand():
 
 def test_add():
     assert evaluate("62+") == 8
+
+def test_substraction():
+    assert evaluate("82-")==6
