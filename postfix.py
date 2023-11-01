@@ -1,2 +1,2 @@
-def evaluate(x,y):
-    return x+y
+def evaluate(exp):
+    return exp
