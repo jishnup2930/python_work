@@ -1,4 +1,4 @@
-from add import evaluate
+from postfix import evaluate
 
 def test_single_operand():
-    assert evaluate("5") == 5
+    assert evaluate(5) == 5
