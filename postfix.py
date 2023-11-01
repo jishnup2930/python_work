@@ -1,13 +1,17 @@
 def evaluate(exp):
     stack = []
-    for i in exp:
-        if i == '+':
-            operand1 = stack.pop()
-            operand2 = stack.pop()
-            stack.append(operand1+operand2)
-        elif i == '-':
-            stack.append(operand1-operand2)
+    operators = ['+', '-', '*', '/']
+    
+    for token in exp:
+        if token not in operators:
+            stack.append(int(token))
         else:
-            stack.append(int(i))
+            operand2 = stack.pop()
+            operand1 = stack.pop()
+            
+            if token == '+':
+                stack.append(operand1 + operand2)
+            elif token == '-':
+                stack.append(operand1 - operand2)
     return stack.pop()
 
