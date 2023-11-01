@@ -10,4 +10,4 @@ def test_substraction():
     assert evaluate("82-")==6
 
 def test_substraction2():
-    assert evaluate(25-)== -3
+    assert evaluate("25-")== -3
