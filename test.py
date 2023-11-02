@@ -14,3 +14,6 @@ def test_substraction2():
 
 def test_multiplication():
     assert evaluate("22*")== 4
+
+def test_division():
+    assert evaluate("22/")==1
