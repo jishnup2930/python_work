@@ -13,7 +13,8 @@ def evaluate(exp):
                 stack.append(operand1 + operand2)
             elif token == '-':
                 stack.append(operand1 - operand2)
-            elif token == ' *':
+            elif token == '*':
                 stack.append(operand1 * operand2)
     return stack.pop()
+print(evaluate("22*"))
 
